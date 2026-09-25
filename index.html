@@ -1,0 +1,2207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Miqat Travels — Tours & Adventure Travel</title>
+<link rel="icon" type="image/png" sizes="32x32"
+      href="img/a05d1723-38ce-4c4b-afee-14852c723192.png?v=2">
+<meta name="description" content="Miqat Travels is a free travel agency HTML template — photo hero with a working booking panel, destination bento, tour listings, tour detail, about and contact pages." />
+<meta name="theme-color" content="#101412" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://images.pexels.com" crossorigin />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" data-header="photo">
+  <div class="container header__inner">
+   <a href="index.html" aria-label="Miqat Travels Home" class="brand">
+    <img src="img/logo.png" alt="Miqat Travels Logo" class="brand-logo">
+</a>
+
+<style>
+.brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.brand-logo {
+    display: block;
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .brand-logo {
+        width: 180px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .brand-logo {
+        width: 150px;
+    }
+}
+</style>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="tours.html">Hajj & Umrah</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a class="nav__signin-mobile" href="contact.html">Plan a trip</a>
+    </nav>
+
+    <div class="header__tools">
+      <a class="btn header__signin" href="contact.html">Plan a trip</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+    <!-- ===== Hajj & Umrah Hero Section ===== -->
+    <section class="hero on-photo" aria-labelledby="hero-title">
+
+        <!-- Background Image -->
+        <img
+            class="hero__img"
+            src="img/1.jpg"
+            alt="Beautiful mountain landscape"
+            width="2000"
+            height="1333"
+            fetchpriority="high"
+            decoding="async"
+        />
+
+        <div class="container hero__grid">
+
+            <!-- Hero Content -->
+            <div class="hero__copy">
+
+                <p class="hero__eyebrow">
+                    <span class="hero__dot" aria-hidden="true"></span>
+                    Your Trusted Hajj & Umrah Travel Partner
+                </p>
+
+                <h1 id="hero-title" class="hero__title">
+                    Experience the Spiritual Journey of a Lifetime with Miqat Travels
+                </h1>
+
+                <p class="hero__sub">
+                    Discover carefully designed Hajj and Umrah packages
+                    from the United Kingdom. At Miqat Travels, we help
+                    make your sacred journey to Makkah and Madinah
+                    comfortable, memorable, and stress-free.
+                    Explore flight options, visa assistance,
+                    and accommodation packages tailored to your needs.
+                </p>
+
+                <!-- CTA Button -->
+                <a class="cta-orbit" href="tours.html">
+                    <span class="cta-orbit__text">
+                        Explore Our Packages
+                    </span>
+
+                    <span class="cta-orbit__dot" aria-hidden="true">
+                        <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="M7 17 17 7M8 7h9v9"/>
+                        </svg>
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+      
+   
+
+      
+      
+
+     
+  
+</section>
+
+
+<br> <br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Miqat Travels - Personalised Quote</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f8f5fd;
+        padding: 15px;
+        color: #5f5790;
+    }
+
+    /* Main Quote Box */
+    .quote-box {
+        position: relative;
+        width: 100%;
+        max-width: 1500px;
+        margin: auto;
+        padding: 14px 34px 28px;
+        border: 1px solid #cfc0f3;
+        border-radius: 9px;
+        overflow: hidden;
+
+        background:
+            radial-gradient(
+                circle at 50% 40%,
+                rgba(255,255,255,.95),
+                rgba(244,240,250,.96)
+            );
+
+        box-shadow:
+            0 8px 25px rgba(118, 88, 168, .08);
+    }
+
+    /* Decorative curves */
+    .quote-box::before {
+        content: "";
+        position: absolute;
+        width: 190px;
+        height: 190px;
+        left: -105px;
+        top: -75px;
+        border: 3px solid #e8c982;
+        border-right: 0;
+        border-bottom: 0;
+        border-radius: 50%;
+        transform: rotate(-18deg);
+        pointer-events: none;
+    }
+
+    .quote-box::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 110px;
+        right: -80px;
+        bottom: -55px;
+        border: 3px solid #e8c982;
+        border-left: 0;
+        border-bottom: 0;
+        border-radius: 50%;
+        transform: rotate(-15deg);
+        pointer-events: none;
+    }
+
+    /* Heading */
+    .quote-title {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        margin-bottom: 28px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: clamp(30px, 3vw, 48px);
+        font-weight: 700;
+        line-height: 1.1;
+
+        background: linear-gradient(
+            90deg,
+            #8066ba,
+            #d6a84f,
+            #8066ba
+        );
+
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    /* Small airplane decoration */
+    .quote-title::after {
+        content: "✈";
+        display: block;
+        width: 150px;
+        margin: 8px auto 0;
+        padding: 0 12px;
+
+        color: #8066ba;
+        font-family: Arial, sans-serif;
+        font-size: 19px;
+        line-height: 18px;
+
+        border-left: 2px solid #d6a84f;
+        border-right: 2px solid #d6a84f;
+    }
+
+    /* Form */
+    .quote-form {
+        position: relative;
+        z-index: 2;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns:
+            1fr
+            1fr
+            1fr
+            .9fr
+            .9fr;
+
+        gap: 16px;
+    }
+
+    /* Inputs */
+    .field {
+        position: relative;
+        height: 54px;
+    }
+
+    .field input,
+    .field select {
+        width: 100%;
+        height: 54px;
+
+        padding: 0 18px 0 52px;
+
+        border: 1px solid #d5c8f2;
+        border-radius: 5px;
+
+        background: rgba(255,255,255,.92);
+        color: #665b94;
+
+        font-size: 18px;
+        outline: none;
+
+        box-shadow:
+            0 2px 7px rgba(118,88,168,.07);
+
+        transition:
+            border-color .2s ease,
+            box-shadow .2s ease;
+    }
+
+    .field select {
+        appearance: auto;
+        padding-left: 52px;
+        cursor: pointer;
+    }
+
+    .field input::placeholder {
+        color: #8278a7;
+        opacity: 1;
+    }
+
+    .field input:focus,
+    .field select:focus {
+        border-color: #9b7ed8;
+
+        box-shadow:
+            0 0 0 3px rgba(155,126,216,.13);
+    }
+
+    /* Icons */
+    .field-icon {
+        position: absolute;
+        left: 17px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 25px;
+        height: 25px;
+
+        color: #8066ba;
+        z-index: 3;
+
+        pointer-events: none;
+    }
+
+    .field-icon svg {
+        width: 100%;
+        height: 100%;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.8;
+    }
+
+    /* Bottom row */
+    .bottom-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto auto auto;
+        align-items: center;
+        gap: 16px;
+
+        margin-top: 30px;
+    }
+
+    /* Checkboxes */
+    .check-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        color: #373044;
+        font-size: 16px;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .check-item input {
+        width: 22px;
+        height: 22px;
+
+        margin: 0;
+
+        appearance: none;
+        -webkit-appearance: none;
+
+        background: #fff;
+        border: 1px solid #cdbff0;
+        border-radius: 4px;
+
+        cursor: pointer;
+        position: relative;
+    }
+
+    .check-item input:checked {
+        background: #9b7ed8;
+        border-color: #9b7ed8;
+    }
+
+    .check-item input:checked::after {
+        content: "✓";
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%, -55%);
+
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /* Captcha */
+    .captcha {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        color: #5d528c;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    .captcha-icon {
+        font-size: 27px;
+        color: #9b7ed8;
+    }
+
+    .captcha-refresh {
+        border: 0;
+        background: transparent;
+        color: #9b7ed8;
+        font-size: 28px;
+        line-height: 1;
+        padding: 0;
+        cursor: pointer;
+        transition: transform .25s ease;
+    }
+
+    .captcha-refresh:hover {
+        transform: rotate(180deg);
+    }
+
+    .captcha-answer-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .captcha-message {
+        display: block;
+        min-height: 17px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #c54b5c;
+    }
+
+    .captcha-input.captcha-error {
+        border-color: #c54b5c;
+        box-shadow: 0 0 0 3px rgba(197,75,92,.10);
+    }
+
+    .captcha-input.captcha-success {
+        border-color: #6ca66c;
+        box-shadow: 0 0 0 3px rgba(108,166,108,.10);
+    }
+
+    .captcha-input {
+        width: 160px;
+        height: 54px;
+
+        border: 1px solid #d5c8f2;
+        border-radius: 3px;
+
+        background: white;
+
+        padding: 0 14px;
+
+        color: #6b6190;
+        font-size: 17px;
+        outline: none;
+    }
+
+    .captcha-input:focus {
+        border-color: #9b7ed8;
+        box-shadow: 0 0 0 3px rgba(155,126,216,.13);
+    }
+
+    /* Submit */
+    .submit-btn {
+        height: 54px;
+        min-width: 190px;
+
+        border: 0;
+        border-radius: 4px;
+
+        background:
+            linear-gradient(
+                135deg,
+                #9b7ed8,
+                #8066ba
+            );
+
+        color: white;
+
+        font-size: 21px;
+        font-weight: 700;
+
+        cursor: pointer;
+
+        box-shadow:
+            0 5px 15px rgba(128,102,186,.22);
+
+        transition:
+            transform .2s ease,
+            box-shadow .2s ease;
+    }
+
+    .submit-btn::after {
+        content: " →";
+        color: #e8c982;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    .submit-btn:hover {
+        transform: translateY(-2px);
+
+        box-shadow:
+            0 8px 20px rgba(128,102,186,.30);
+    }
+
+    .submit-btn:active {
+        transform: translateY(0);
+    }
+
+
+    /* ==========================================
+       TABLET
+       ========================================== */
+
+    @media (max-width: 1100px) {
+
+        .quote-box {
+            padding: 18px 20px 24px;
+        }
+
+        .form-row {
+            grid-template-columns:
+                repeat(3, 1fr);
+        }
+
+        .bottom-row {
+            grid-template-columns:
+                1fr 1fr;
+        }
+
+        .captcha {
+            justify-self: start;
+        }
+
+        .submit-btn {
+            justify-self: start;
+        }
+    }
+
+
+    /* ==========================================
+       MOBILE
+       ========================================== */
+
+    @media (max-width: 700px) {
+
+        body {
+            padding: 8px;
+        }
+
+        .quote-box {
+            padding: 22px 14px;
+        }
+
+        .quote-title {
+            font-size: 30px;
+            margin-bottom: 22px;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .field,
+        .field input,
+        .field select {
+            height: 52px;
+        }
+
+        .bottom-row {
+            grid-template-columns: 1fr;
+            gap: 14px;
+            margin-top: 22px;
+        }
+
+        .check-item {
+            white-space: normal;
+            font-size: 14px;
+        }
+
+        .captcha {
+            width: 100%;
+        }
+
+        .captcha-input {
+            flex: 1;
+            width: auto;
+        }
+
+        .submit-btn {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<section class="quote-box">
+
+    <h1 class="quote-title">
+        Get a Personalised Quote
+    </h1>
+
+    <form class="quote-form">
+
+        <!-- Top Fields -->
+        <div class="form-row">
+
+            <!-- Passenger Name -->
+            <div class="field">
+
+                <span class="field-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="7" r="4"></circle>
+                        <path d="M4 21c.7-4 3.2-6 8-6s7.3 2 8 6"></path>
+                    </svg>
+                </span>
+
+                <input
+                    type="text"
+                    placeholder="Passenger Name*"
+                    required
+                >
+            </div>
+
+
+            <!-- Email -->
+            <div class="field">
+
+                <span class="field-icon">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                        <path d="m4 7 8 6 8-6"></path>
+                    </svg>
+                </span>
+
+                <input
+                    type="email"
+                    placeholder="Email Address*"
+                    required
+                >
+            </div>
+
+
+            <!-- Phone -->
+            <div class="field">
+
+                <span class="field-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M6.5 3.5 9 3l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v2.5c0 1.1-.9 2-2 2C10.2 19.5 4.5 13.8 4.5 5c0-1.1.9-2 2-1.5Z"></path>
+                    </svg>
+                </span>
+
+                <input
+                    type="tel"
+                    placeholder="Contact Number*"
+                    required
+                >
+            </div>
+
+
+            <!-- Adult -->
+            <div class="field">
+
+                <span class="field-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="9" cy="8" r="3"></circle>
+                        <circle cx="17" cy="8" r="3"></circle>
+                        <path d="M3 20c.4-3.5 2.4-5 6-5s5.6 1.5 6 5"></path>
+                        <path d="M14 15c3.5 0 5.8 1.6 6 5"></path>
+                    </svg>
+                </span>
+
+                <select>
+                    <option>Adult</option>
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+                    <option>4 Adults</option>
+                    <option>5 Adults</option>
+                </select>
+
+            </div>
+
+
+            <!-- Child -->
+            <div class="field">
+
+                <span class="field-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="9" cy="8" r="3"></circle>
+                        <circle cx="17" cy="8" r="3"></circle>
+                        <path d="M3 20c.4-3.5 2.4-5 6-5s5.6 1.5 6 5"></path>
+                        <path d="M14 15c3.5 0 5.8 1.6 6 5"></path>
+                    </svg>
+                </span>
+
+                <select>
+                    <option>Child</option>
+                    <option>1 Child</option>
+                    <option>2 Children</option>
+                    <option>3 Children</option>
+                    <option>4 Children</option>
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom -->
+        <div class="bottom-row">
+
+            <label class="check-item">
+                <input type="checkbox">
+                <span>
+                    I'd like to receive phone call about services.
+                </span>
+            </label>
+
+
+            <label class="check-item">
+                <input type="checkbox">
+                <span>
+                    I'd like to receive ours emails about Hajj & Umrah
+                </span>
+            </label>
+
+
+            <!-- Working CAPTCHA -->
+            <div class="captcha">
+
+                <button type="button"
+                        class="captcha-refresh"
+                        onclick="generateCaptcha()"
+                        aria-label="Refresh CAPTCHA">⟳</button>
+
+                <span id="captcha-question">6 + 5 =</span>
+
+            </div>
+
+            <div class="captcha-answer-wrap">
+
+                <input
+                    class="captcha-input"
+                    id="captcha-answer"
+                    type="number"
+                    placeholder="Your Answer*"
+                    required
+                >
+
+                <span id="captcha-message"
+                      class="captcha-message"
+                      aria-live="polite"></span>
+
+            </div>
+
+
+            <button
+                class="submit-btn"
+                type="submit"
+            >
+                Submit
+            </button>
+
+        </div>
+
+    </form>
+
+</section>
+
+<script>
+let captchaAnswer = 0;
+
+function generateCaptcha() {
+    const number1 = Math.floor(Math.random() * 9) + 1;
+    const number2 = Math.floor(Math.random() * 9) + 1;
+
+    captchaAnswer = number1 + number2;
+
+    const question = document.getElementById("captcha-question");
+    const input = document.getElementById("captcha-answer");
+    const message = document.getElementById("captcha-message");
+
+    if (!question || !input || !message) return;
+
+    question.textContent = `${number1} + ${number2} =`;
+    input.value = "";
+    input.classList.remove("captcha-error", "captcha-success");
+    message.textContent = "";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    generateCaptcha();
+
+    const form = document.querySelector(".quote-form");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        const input = document.getElementById("captcha-answer");
+        const message = document.getElementById("captcha-message");
+
+        if (!input || !message) return;
+
+        const value = input.value.trim();
+
+        if (value === "") {
+            e.preventDefault();
+            input.classList.add("captcha-error");
+            input.classList.remove("captcha-success");
+            message.textContent = "Please enter the CAPTCHA answer.";
+            message.style.color = "#c54b5c";
+            input.focus();
+            return;
+        }
+
+        if (Number(value) !== captchaAnswer) {
+            e.preventDefault();
+            input.classList.add("captcha-error");
+            input.classList.remove("captcha-success");
+            message.textContent = "Incorrect answer. Please try again.";
+            message.style.color = "#c54b5c";
+            input.focus();
+            return;
+        }
+
+        input.classList.remove("captcha-error");
+        input.classList.add("captcha-success");
+        message.textContent = "Captcha verified ✓";
+        message.style.color = "#6ca66c";
+    });
+});
+</script>
+</body>
+</html>
+
+<br>
+
+
+
+
+<!-- ===== Hajj & Umrah Statement Section ===== -->
+<section class="section statement" aria-labelledby="statement-title">
+
+    <div class="container">
+
+        <h2 id="statement-title" class="statement__line" data-reveal>
+
+            Begin Your Sacred Journey
+
+            <span class="pill-img">
+                <img
+                    src="img/images (3).jfif"
+                    alt="Holy journey"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </span>
+
+            with Faith
+
+            <span class="pill-img pill-img--wide">
+                <img
+                    src="img/images (2).jfif"
+                    alt="Sacred travel experience"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
+                />
+            </span>
+
+            and Devotion.
+
+        </h2>
+
+        <p class="statement__sub" data-reveal>
+            Let Miqat Travels help you plan your Hajj and Umrah journey
+            with care, comfort, and dedicated travel assistance.
+            Take the first step towards the holy cities of Makkah
+            and Madinah.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ===== Why Choose Miqat Travels ===== -->
+<section class="section section--flush-top" aria-labelledby="closer-title">
+
+    <div class="container split">
+
+        <!-- Image -->
+        <figure class="split__media" data-reveal>
+
+            <img
+                src="img/caption.jpg"
+                alt="Beautiful view of the Holy Kaaba"
+                width="1100"
+                height="1375"
+                loading="lazy"
+                decoding="async"
+            />
+
+            <figcaption class="split__cap">
+                <span class="label">
+                    Makkah · Your Sacred Journey
+                </span>
+            </figcaption>
+
+        </figure>
+
+        <!-- Content -->
+        <div class="split__copy">
+
+            <p class="label">
+                Why Choose Miqat Travels
+            </p>
+
+            <h2 id="closer-title">
+                Your Journey to the Holy Cities,
+                Planned with Care and Comfort
+            </h2>
+
+            <p>
+                At Miqat Travels, we are dedicated to helping pilgrims
+                from the United Kingdom prepare for their Hajj and
+                Umrah journey. From travel arrangements and visa
+                assistance to accommodation options, our team is here
+                to support you at every step.
+            </p>
+
+            <!-- Statistics -->
+            <dl class="ledger">
+
+                <div>
+                    <dt>Customer Satisfaction</dt>
+                    <dd>97%</dd>
+                </div>
+
+                <div>
+                    <dt>Travel Assistance</dt>
+                    <dd>24/7</dd>
+                </div>
+
+                <div>
+                    <dt>Holy Destinations</dt>
+                    <dd>2</dd>
+                </div>
+
+            </dl>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== Hajj & Umrah Destinations Bento ===== -->
+<section class="section destinations" aria-labelledby="dest-title">
+
+    <div class="container">
+
+        <div class="shead shead--split">
+
+            <div>
+                <p class="label">Holy Destinations</p>
+
+                <h2 id="dest-title">
+                    Explore the Sacred Cities
+                </h2>
+            </div>
+
+            <a class="link-arrow" href="tours.html">
+                View All Packages
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M7 17 17 7M8 7h9v9"/>
+                </svg>
+            </a>
+
+        </div>
+<br>
+        <div class="bento">
+
+            <!-- Makkah -->
+            <a class="dtile" href="tours.html">
+
+                <img
+                    src="img/02.jpg"
+                    alt="Makkah Holy City"
+                    width="1100"
+                    height="733"
+                    loading="lazy"
+                    decoding="async"
+                />
+
+                <span class="dtile__meta">
+
+                    <span class="dtile__name">
+                        Makkah
+                    </span>
+
+                    <span class="dtile__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        Saudi Arabia
+
+                    </span>
+
+                </span>
+
+                <span class="dtile__count">
+                    Umrah Packages
+                </span>
+
+            </a>
+
+
+            <!-- Madinah -->
+            <a class="dtile" href="tours.html">
+
+                <img
+                    src="img/istockphoto-1513886439-612x612.jpg"
+                    alt="Madinah Holy City"
+                    width="1100"
+                    height="733"
+                    loading="lazy"
+                    decoding="async"
+                />
+
+                <span class="dtile__meta">
+
+                    <span class="dtile__name">
+                        Madinah
+                    </span>
+
+                    <span class="dtile__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        Saudi Arabia
+
+                    </span>
+
+                </span>
+
+                <span class="dtile__count">
+                    Umrah Packages
+                </span>
+
+            </a>
+
+
+            <!-- Hajj -->
+            <a class="dtile dtile--wide" href="tours.html">
+
+                <img
+                    src="img/istockphoto-891971638-1024x1024.jpg"
+                    alt="Hajj pilgrimage journey"
+                    width="1100"
+                    height="733"
+                    loading="lazy"
+                    decoding="async"
+                />
+
+                <span class="dtile__meta">
+
+                    <span class="dtile__name">
+                        Hajj Packages
+                    </span>
+
+                    <span class="dtile__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        Saudi Arabia
+
+                    </span>
+
+                </span>
+
+                <span class="dtile__count">
+                    Hajj Packages
+                </span>
+
+            </a>
+
+
+            <!-- Flights & Hotels -->
+            <a class="dtile" href="tours.html">
+
+                <img
+                    src="img/istockphoto-891971638-1024x1024.jpg"
+                    alt="Travel accommodation and flights"
+                    width="1100"
+                    height="733"
+                    loading="lazy"
+                    decoding="async"
+                />
+
+                <span class="dtile__meta">
+
+                    <span class="dtile__name">
+                        Flights & Hotels
+                    </span>
+
+                    <span class="dtile__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        United Kingdom
+
+                    </span>
+
+                </span>
+
+                <span class="dtile__count">
+                    Travel Assistance
+                </span>
+
+            </a>
+
+
+            <!-- Complete Journey -->
+            <a class="dtile" href="tours.html">
+
+                <img
+                    src="img/istockphoto-2189017784-1024x1024.jpg"
+                    alt="Spiritual travel experience"
+                    width="1100"
+                    height="733"
+                    loading="lazy"
+                    decoding="async"
+                />
+
+                <span class="dtile__meta">
+
+                    <span class="dtile__name">
+                        Complete Journey
+                    </span>
+
+                    <span class="dtile__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        Saudi Arabia
+
+                    </span>
+
+                </span>
+
+                <span class="dtile__count">
+                    Complete Packages
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===== Why Us — Three Promises ===== -->
+<section class="section promises" aria-labelledby="prom-title">
+
+    <div class="container">
+
+        <div class="shead shead--center">
+
+            <p class="label">The Miqat Travels Promise</p>
+
+            <h2 id="prom-title">
+                Your Sacred Journey, Our Dedicated Care
+            </h2>
+
+            <p>
+                We are here to support your Hajj and Umrah journey
+                with thoughtful planning, travel assistance, and
+                care at every step.
+            </p>
+
+        </div>
+
+        <ul class="promise-row">
+
+            <!-- Promise 1 -->
+            <li class="promise" data-reveal>
+
+                <span class="promise__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.6"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M3 10h18M5 10V6h14v4M7 10v8M17 10v8M4 18h16"/>
+                        <path d="M12 3v3"/>
+                    </svg>
+                </span>
+
+                <h3>
+                    Hassle-Free Travel Assistance
+                </h3>
+
+                <p>
+                    From flight planning and visa assistance to
+                    accommodation arrangements, we help you
+                    prepare for your sacred journey with confidence.
+                </p>
+
+            </li>
+
+
+            <!-- Promise 2 -->
+            <li class="promise" data-reveal>
+
+                <span class="promise__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.6"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <circle cx="12" cy="7" r="3.5"/>
+                        <path d="M5 21a7 7 0 0 1 14 0"/>
+                        <path d="M12 14v3"/>
+                    </svg>
+                </span>
+
+                <h3>
+                    Dedicated Pilgrim Support
+                </h3>
+
+                <p>
+                    Our team is available to guide you through
+                    your travel arrangements and provide
+                    helpful assistance before and during your trip.
+                </p>
+
+            </li>
+
+
+            <!-- Promise 3 -->
+            <li class="promise" data-reveal>
+
+                <span class="promise__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="1.6"
+                         stroke-linecap="round"
+                         stroke-linejoin="round">
+                        <path d="M12 3 4 6v6c0 4.5 3.4 8 8 9
+                                 4.6-1 8-4.5 8-9V6l-8-3Z"/>
+                        <path d="m9 12 2 2 4-4"/>
+                    </svg>
+                </span>
+
+                <h3>
+                    Trusted & Transparent Service
+                </h3>
+
+                <p>
+                    We aim to provide clear package details,
+                    honest communication, and reliable assistance
+                    to help you plan your pilgrimage.
+                </p>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ===== Featured Hajj & Umrah Packages ===== -->
+<section class="section" aria-labelledby="feat-title">
+
+    <div class="container">
+
+        <div class="shead shead--split">
+
+            <div>
+
+                <p class="label">
+                    Explore Our Packages
+                </p>
+
+                <h2 id="feat-title">
+                    Hajj & Umrah Packages
+                </h2>
+
+            </div>
+
+            <a class="link-arrow" href="tours.html">
+
+                View All Packages
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     aria-hidden="true">
+                    <path d="M7 17 17 7M8 7h9v9"/>
+                </svg>
+
+            </a>
+
+        </div>
+
+
+        <div class="tgrid">
+
+
+            <!-- Umrah Package -->
+            <article class="tcard"
+                     data-kind="umrah"
+                     data-price="0"
+                     data-days="">
+
+                <div class="tcard__media">
+
+                    <img
+                        src="img/photo-1693590614566-1d3ea9ef32f7.avif"
+                        alt="Umrah pilgrimage package"
+                        width="800"
+                        height="600"
+                        loading="lazy"
+                        decoding="async"
+                    />
+
+                    <span class="tcard__kind">
+                        Umrah
+                    </span>
+
+                </div>
+
+
+                <div class="tcard__body">
+
+                    <p class="tcard__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        Makkah, Saudi Arabia
+
+                    </p>
+
+
+                    <h3 class="tcard__name">
+
+                        <a href="tours.html">
+                            Umrah Travel Package
+                        </a>
+
+                    </h3>
+
+
+                    <p class="tcard__facts">
+
+                        <span>
+                            Flexible Duration
+                        </span>
+
+                        <span>
+                            Spiritual Journey
+                        </span>
+
+                    </p>
+
+
+                    <p class="tcard__foot">
+
+                        <span class="tcard__price">
+                            <small>Enquire for</small>
+                            Price
+                        </span>
+
+                        <span class="tcard__go" aria-hidden="true">
+
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M7 17 17 7M8 7h9v9"/>
+                            </svg>
+
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Hajj Package -->
+            <article class="tcard"
+                     data-kind="hajj"
+                     data-price="0"
+                     data-days="">
+
+                <div class="tcard__media">
+
+                    <img
+                        src="img/photo-1664723288695-2d4e1dd27e31.avif"
+                        alt="Hajj pilgrimage travel package"
+                        width="800"
+                        height="600"
+                        loading="lazy"
+                        decoding="async"
+                    />
+
+                    <span class="tcard__kind">
+                        Hajj
+                    </span>
+
+                </div>
+
+
+                <div class="tcard__body">
+
+                    <p class="tcard__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        Makkah, Saudi Arabia
+
+                    </p>
+
+
+                    <h3 class="tcard__name">
+
+                        <a href="tours.html">
+                            Hajj Pilgrimage Package
+                        </a>
+
+                    </h3>
+
+
+                    <p class="tcard__facts">
+
+                        <span>
+                            Seasonal Package
+                        </span>
+
+                        <span>
+                            Pilgrimage Assistance
+                        </span>
+
+                    </p>
+
+
+                    <p class="tcard__foot">
+
+                        <span class="tcard__price">
+                            <small>Enquire for</small>
+                            Price
+                        </span>
+
+                        <span class="tcard__go" aria-hidden="true">
+
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M7 17 17 7M8 7h9v9"/>
+                            </svg>
+
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- Custom Package -->
+            <article class="tcard"
+                     data-kind="custom"
+                     data-price="0"
+                     data-days="">
+
+                <div class="tcard__media">
+
+                    <img
+                        src="img/photo-1592326871020-04f58c1a52f3.avif"
+                        alt="Custom pilgrimage travel arrangements"
+                        width="800"
+                        height="600"
+                        loading="lazy"
+                        decoding="async"
+                    />
+
+                    <span class="tcard__kind">
+                        Custom
+                    </span>
+
+                </div>
+
+
+                <div class="tcard__body">
+
+                    <p class="tcard__place">
+
+                        <svg viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.8"
+                             stroke-linecap="round"
+                             stroke-linejoin="round"
+                             aria-hidden="true">
+                            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/>
+                            <circle cx="12" cy="9.5" r="2.5"/>
+                        </svg>
+
+                        Makkah & Madinah
+
+                    </p>
+
+
+                    <h3 class="tcard__name">
+
+                        <a href="tours.html">
+                            Tailored Travel Arrangements
+                        </a>
+
+                    </h3>
+
+
+                    <p class="tcard__facts">
+
+                        <span>
+                            Flexible Options
+                        </span>
+
+                        <span>
+                            Travel Assistance
+                        </span>
+
+                    </p>
+
+
+                    <p class="tcard__foot">
+
+                        <span class="tcard__price">
+                            <small>Enquire for</small>
+                            Price
+                        </span>
+
+                        <span class="tcard__go" aria-hidden="true">
+
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 aria-hidden="true">
+                                <path d="M7 17 17 7M8 7h9v9"/>
+                            </svg>
+
+                        </span>
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===== Pilgrim Testimonial ===== -->
+<section class="section quote-band on-photo" aria-labelledby="quote-title">
+
+    <img
+        class="quote-band__img"
+        src="img/premium_photo-1697730274057-19338e84db8e.avif"
+        alt="Pilgrims travelling together"
+        width="2000"
+        height="1333"
+        loading="lazy"
+        decoding="async"
+    />
+
+    <div class="container quote-band__inner">
+
+        <h2 id="quote-title" class="sr-only">
+            What Our Pilgrims Say
+        </h2>
+
+        <figure>
+
+            <blockquote>
+                &ldquo;Miqat Travels made our Umrah journey easier to
+                organise. The support and guidance throughout our trip
+                gave our family peace of mind.&rdquo;
+            </blockquote>
+
+            <figcaption>
+                <strong>Our Valued Pilgrims</strong>
+                · Umrah Journey
+            </figcaption>
+
+        </figure>
+
+    </div>
+
+</section>
+
+
+<!-- ===== Closing Call To Action ===== -->
+<section class="section closer" aria-labelledby="closer-cta">
+
+    <div class="container closer__card">
+
+        <div>
+
+            <p class="label">
+                Begin Your Sacred Journey
+            </p>
+
+            <h2 id="closer-cta">
+                Ready to plan your Hajj or Umrah journey?
+            </h2>
+
+        </div>
+
+        <div class="closer__actions">
+
+            <a class="btn btn--dark" href="contact.html">
+                Plan Your Journey
+            </a>
+
+            <a class="btn btn--ghost" href="tours.html">
+                View Packages
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer__top">
+
+            <!-- Newsletter -->
+            <div class="footer__lead">
+
+                <p class="footer__title">
+                    Stay Connected with Miqat Travels
+                </p>
+
+                <p class="footer__sub">
+                    Receive updates about Hajj and Umrah packages,
+                    travel information, important announcements,
+                    and helpful pilgrimage guidance.
+                </p>
+
+                <form class="subscribe" data-demo-form novalidate>
+
+                    <label class="sr-only" for="sub-email">
+                        Email address
+                    </label>
+
+                    <input
+                        id="sub-email"
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        autocomplete="email"
+                        required
+                    />
+
+                    <button
+                        class="btn btn--glacier"
+                        type="submit"
+                    >
+                        Subscribe
+                    </button>
+
+                    <p
+                        class="form-note"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </form>
+
+            </div>
+
+
+            <!-- Footer Columns -->
+            <div class="footer__cols">
+
+                <!-- Explore -->
+                <div>
+
+                    <p class="label footer__h">
+                        Explore
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <a href="tours.html">
+                                Hajj Packages
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tours.html">
+                                Umrah Packages
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tours.html">
+                                Makkah & Madinah
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="tours.html">
+                                Package Details
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Company -->
+                <div>
+
+                    <p class="label footer__h">
+                        Miqat Travels
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                Why Choose Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="privacy.html">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div>
+
+                    <p class="label footer__h">
+                        Contact
+                    </p>
+
+                    <address>
+
+                        Miqat Travels<br />
+                        United Kingdom<br />
+
+                        <a href="tel:+440000000000">
+                            +44 00 0000 0000
+                        </a><br />
+
+                        <a href="mailto:info@miqattravels.com">
+                            info@miqattravels.com
+                        </a>
+
+                    </address>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Large Footer Brand -->
+        <p class="footer__word" aria-hidden="true">
+            Miqat Travels
+        </p>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer__bottom">
+
+            <p>
+                &copy;
+                <span data-year>2026</span>
+                Miqat Travels. All Rights Reserved.
+            </p>
+
+            <p>
+                Hajj & Umrah Travel Services
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- Toast -->
+<div
+    class="toast"
+    role="status"
+    aria-live="polite"
+    hidden
+></div>
+
+
+<script src="assets/js/main.js" defer></script>
+
+</body>
+</html>
+
+
+<a href="https://wa.me/923001234567?text=Hello%20I%20would%20like%20to%20contact%20you."
+   class="contact-float whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact us on WhatsApp">
+
+    <span class="contact-icon">
+        <i class="fab fa-whatsapp"></i>
+    </span>
+
+    <span class="contact-text">WhatsApp</span>
+
+</a>
+
+
+<!-- Call Button -->
+<a href="tel:02039616958"
+   class="contact-float call-float"
+   aria-label="Call us now">
+
+    <span class="contact-icon">
+        <i class="fas fa-phone"></i>
+    </span>
+
+    <span class="contact-text">Call Now</span>
+
+</a>
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* ================= COMMON BUTTON ================= */
+
+.contact-float {
+    position: fixed;
+    left: 0;
+
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    padding: 9px 16px 9px 9px;
+
+    border-radius: 0 30px 30px 0;
+
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.20);
+
+    transition: all 0.3s ease;
+}
+
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp-float {
+    top: 42%;
+
+    background: #25D366;
+
+    animation: whatsappPulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    background: #128C7E;
+
+    transform: translateX(5px);
+}
+
+
+/* ================= CALL ================= */
+
+.call-float {
+    top: 51%;
+
+    background: #1769ff;
+
+    animation: callPulse 2s infinite;
+}
+
+.call-float:hover {
+    background: #0b4dcc;
+
+    transform: translateX(5px);
+}
+
+
+/* ================= ICON ================= */
+
+.contact-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 21px;
+
+    margin-right: 8px;
+
+    flex-shrink: 0;
+}
+
+
+/* WhatsApp icon color */
+
+.whatsapp-float .contact-icon {
+    color: #25D366;
+}
+
+
+/* Call icon color */
+
+.call-float .contact-icon {
+    color: #1769ff;
+}
+
+
+/* ================= TEXT ================= */
+
+.contact-text {
+    white-space: nowrap;
+}
+
+
+/* ================= WHATSAPP ANIMATION ================= */
+
+@keyframes whatsappPulse {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+
+}
+
+
+/* ================= CALL ANIMATION ================= */
+
+@keyframes callPulse {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(23, 105, 255, 0.40);
+    }
+
+    70% {
+        box-shadow: 0 0 0 12px rgba(23, 105, 255, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(23, 105, 255, 0);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .contact-float {
+        left: 12px;
+
+        border-radius: 30px;
+
+        padding: 8px 13px 8px 8px;
+
+        font-size: 13px;
+    }
+
+    .whatsapp-float {
+        top: auto;
+        bottom: 85px;
+    }
+
+    .call-float {
+        top: auto;
+        bottom: 25px;
+    }
+
+    .contact-icon {
+        width: 38px;
+        height: 38px;
+
+        font-size: 20px;
+
+        margin-right: 7px;
+    }
+
+}
+
+
+/* ================= VERY SMALL SCREEN ================= */
+
+@media (max-width: 380px) {
+
+    .contact-text {
+        display: none;
+    }
+
+    .contact-float {
+        width: 48px;
+        height: 48px;
+
+        padding: 5px;
+
+        justify-content: center;
+
+        border-radius: 50%;
+    }
+
+    .contact-icon {
+        margin: 0;
+        width: 38px;
+        height: 38px;
+    }
+
+    .whatsapp-float {
+        bottom: 80px;
+    }
+
+    .call-float {
+        bottom: 20px;
+    }
+
+}
+
+</style>
