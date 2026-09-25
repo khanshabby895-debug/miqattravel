@@ -142,41 +142,18 @@
 
     </section>
 
-</main>
-
-      
-   
-
-      
-      
-
-     
-  
-</section>
-
-
-<br> <br>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Miqat Travels - Personalised Quote</title>
+<section class="quote-section" aria-labelledby="quote-form-title">
 
 <style>
-    * {
+
+    .quote-section,
+    .quote-section * {
         box-sizing: border-box;
-        margin: 0;
-        padding: 0;
     }
 
-    body {
+    .quote-section {
         font-family: Arial, Helvetica, sans-serif;
-        background: #f8f5fd;
-        padding: 15px;
-        color: #5f5790;
+        color: #111111;
     }
 
     /* Main Quote Box */
@@ -186,19 +163,19 @@
         max-width: 1500px;
         margin: auto;
         padding: 14px 34px 28px;
-        border: 1px solid #cfc0f3;
+        border: 1px solid #222222;
         border-radius: 9px;
         overflow: hidden;
 
         background:
             radial-gradient(
                 circle at 50% 40%,
-                rgba(255,255,255,.95),
-                rgba(244,240,250,.96)
+                rgba(255,255,255,.98),
+                rgba(245,245,245,.98)
             );
 
         box-shadow:
-            0 8px 25px rgba(118, 88, 168, .08);
+            0 8px 25px rgba(0,0,0,.10);
     }
 
     /* Decorative curves */
@@ -209,7 +186,7 @@
         height: 190px;
         left: -105px;
         top: -75px;
-        border: 3px solid #e8c982;
+        border: 3px solid #111111;
         border-right: 0;
         border-bottom: 0;
         border-radius: 50%;
@@ -224,7 +201,7 @@
         height: 110px;
         right: -80px;
         bottom: -55px;
-        border: 3px solid #e8c982;
+        border: 3px solid #111111;
         border-left: 0;
         border-bottom: 0;
         border-radius: 50%;
@@ -238,6 +215,7 @@
         z-index: 2;
         text-align: center;
         margin-bottom: 28px;
+
         font-family: Georgia, "Times New Roman", serif;
         font-size: clamp(30px, 3vw, 48px);
         font-weight: 700;
@@ -245,9 +223,9 @@
 
         background: linear-gradient(
             90deg,
-            #8066ba,
-            #d6a84f,
-            #8066ba
+            #000000,
+            #777777,
+            #000000
         );
 
         -webkit-background-clip: text;
@@ -263,13 +241,13 @@
         margin: 8px auto 0;
         padding: 0 12px;
 
-        color: #8066ba;
+        color: #000000;
         font-family: Arial, sans-serif;
         font-size: 19px;
         line-height: 18px;
 
-        border-left: 2px solid #d6a84f;
-        border-right: 2px solid #d6a84f;
+        border-left: 2px solid #000000;
+        border-right: 2px solid #000000;
     }
 
     /* Form */
@@ -303,17 +281,17 @@
 
         padding: 0 18px 0 52px;
 
-        border: 1px solid #d5c8f2;
+        border: 1px solid #bdbdbd;
         border-radius: 5px;
 
-        background: rgba(255,255,255,.92);
-        color: #665b94;
+        background: rgba(255,255,255,.96);
+        color: #111111;
 
         font-size: 18px;
         outline: none;
 
         box-shadow:
-            0 2px 7px rgba(118,88,168,.07);
+            0 2px 7px rgba(0,0,0,.07);
 
         transition:
             border-color .2s ease,
@@ -327,16 +305,16 @@
     }
 
     .field input::placeholder {
-        color: #8278a7;
+        color: #666666;
         opacity: 1;
     }
 
     .field input:focus,
     .field select:focus {
-        border-color: #9b7ed8;
+        border-color: #000000;
 
         box-shadow:
-            0 0 0 3px rgba(155,126,216,.13);
+            0 0 0 3px rgba(0,0,0,.10);
     }
 
     /* Icons */
@@ -349,7 +327,7 @@
         width: 25px;
         height: 25px;
 
-        color: #8066ba;
+        color: #000000;
         z-index: 3;
 
         pointer-events: none;
@@ -379,7 +357,7 @@
         align-items: center;
         gap: 10px;
 
-        color: #373044;
+        color: #222222;
         font-size: 16px;
         font-weight: 500;
         white-space: nowrap;
@@ -394,8 +372,8 @@
         appearance: none;
         -webkit-appearance: none;
 
-        background: #fff;
-        border: 1px solid #cdbff0;
+        background: #ffffff;
+        border: 1px solid #222222;
         border-radius: 4px;
 
         cursor: pointer;
@@ -403,8 +381,8 @@
     }
 
     .check-item input:checked {
-        background: #9b7ed8;
-        border-color: #9b7ed8;
+        background: #000000;
+        border-color: #000000;
     }
 
     .check-item input:checked::after {
@@ -416,85 +394,9 @@
 
         transform: translate(-50%, -55%);
 
-        color: white;
+        color: #ffffff;
         font-size: 15px;
         font-weight: bold;
-    }
-
-    /* Captcha */
-    .captcha {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-
-        color: #5d528c;
-        font-size: 18px;
-        white-space: nowrap;
-    }
-
-    .captcha-icon {
-        font-size: 27px;
-        color: #9b7ed8;
-    }
-
-    .captcha-refresh {
-        border: 0;
-        background: transparent;
-        color: #9b7ed8;
-        font-size: 28px;
-        line-height: 1;
-        padding: 0;
-        cursor: pointer;
-        transition: transform .25s ease;
-    }
-
-    .captcha-refresh:hover {
-        transform: rotate(180deg);
-    }
-
-    .captcha-answer-wrap {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .captcha-message {
-        display: block;
-        min-height: 17px;
-        font-size: 12px;
-        line-height: 16px;
-        color: #c54b5c;
-    }
-
-    .captcha-input.captcha-error {
-        border-color: #c54b5c;
-        box-shadow: 0 0 0 3px rgba(197,75,92,.10);
-    }
-
-    .captcha-input.captcha-success {
-        border-color: #6ca66c;
-        box-shadow: 0 0 0 3px rgba(108,166,108,.10);
-    }
-
-    .captcha-input {
-        width: 160px;
-        height: 54px;
-
-        border: 1px solid #d5c8f2;
-        border-radius: 3px;
-
-        background: white;
-
-        padding: 0 14px;
-
-        color: #6b6190;
-        font-size: 17px;
-        outline: none;
-    }
-
-    .captcha-input:focus {
-        border-color: #9b7ed8;
-        box-shadow: 0 0 0 3px rgba(155,126,216,.13);
     }
 
     /* Submit */
@@ -508,11 +410,11 @@
         background:
             linear-gradient(
                 135deg,
-                #9b7ed8,
-                #8066ba
+                #111111,
+                #000000
             );
 
-        color: white;
+        color: #ffffff;
 
         font-size: 21px;
         font-weight: 700;
@@ -520,16 +422,17 @@
         cursor: pointer;
 
         box-shadow:
-            0 5px 15px rgba(128,102,186,.22);
+            0 5px 15px rgba(0,0,0,.22);
 
         transition:
             transform .2s ease,
-            box-shadow .2s ease;
+            box-shadow .2s ease,
+            background .2s ease;
     }
 
     .submit-btn::after {
         content: " →";
-        color: #e8c982;
+        color: #ffffff;
         font-size: 25px;
         margin-left: 10px;
     }
@@ -537,8 +440,15 @@
     .submit-btn:hover {
         transform: translateY(-2px);
 
+        background:
+            linear-gradient(
+                135deg,
+                #333333,
+                #000000
+            );
+
         box-shadow:
-            0 8px 20px rgba(128,102,186,.30);
+            0 8px 20px rgba(0,0,0,.30);
     }
 
     .submit-btn:active {
@@ -566,10 +476,6 @@
                 1fr 1fr;
         }
 
-        .captcha {
-            justify-self: start;
-        }
-
         .submit-btn {
             justify-self: start;
         }
@@ -582,7 +488,7 @@
 
     @media (max-width: 700px) {
 
-        body {
+        .quote-section {
             padding: 8px;
         }
 
@@ -617,189 +523,111 @@
             font-size: 14px;
         }
 
-        .captcha {
-            width: 100%;
-        }
-
-        .captcha-input {
-            flex: 1;
-            width: auto;
-        }
-
         .submit-btn {
             width: 100%;
         }
     }
-</style>
-</head>
 
-<body>
+</style>
+
+
+
 
 <section class="quote-box">
 
-    <h1 class="quote-title">
+    <h1 id="quote-form-title" class="quote-title">
         Get a Personalised Quote
     </h1>
 
-    <form class="quote-form">
+    <form class="quote-form" action="save_quote.php" method="POST" autocomplete="on">
 
-        <!-- Top Fields -->
         <div class="form-row">
 
             <!-- Passenger Name -->
             <div class="field">
-
                 <span class="field-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <circle cx="12" cy="7" r="4"></circle>
                         <path d="M4 21c.7-4 3.2-6 8-6s7.3 2 8 6"></path>
                     </svg>
                 </span>
-
-                <input
-                    type="text"
-                    placeholder="Passenger Name*"
-                    required
-                >
+                <input type="text" name="passenger_name" placeholder="Passenger Name*" required maxlength="150">
             </div>
-
 
             <!-- Email -->
             <div class="field">
-
                 <span class="field-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <rect x="3" y="5" width="18" height="14" rx="2"></rect>
                         <path d="m4 7 8 6 8-6"></path>
                     </svg>
                 </span>
-
-                <input
-                    type="email"
-                    placeholder="Email Address*"
-                    required
-                >
+                <input type="email" name="email" placeholder="Email Address*" required maxlength="190">
             </div>
-
 
             <!-- Phone -->
             <div class="field">
-
                 <span class="field-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M6.5 3.5 9 3l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v2.5c0 1.1-.9 2-2 2C10.2 19.5 4.5 13.8 4.5 5c0-1.1.9-2 2-1.5Z"></path>
                     </svg>
                 </span>
-
-                <input
-                    type="tel"
-                    placeholder="Contact Number*"
-                    required
-                >
+                <input type="tel" name="contact_number" placeholder="Contact Number*" required maxlength="30" inputmode="tel">
             </div>
-
 
             <!-- Adult -->
             <div class="field">
-
                 <span class="field-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <circle cx="9" cy="8" r="3"></circle>
                         <circle cx="17" cy="8" r="3"></circle>
                         <path d="M3 20c.4-3.5 2.4-5 6-5s5.6 1.5 6 5"></path>
                         <path d="M14 15c3.5 0 5.8 1.6 6 5"></path>
                     </svg>
                 </span>
-
-                <select>
-                    <option>Adult</option>
-                    <option>1 Adult</option>
-                    <option>2 Adults</option>
-                    <option>3 Adults</option>
-                    <option>4 Adults</option>
-                    <option>5 Adults</option>
+                <select name="adults" required>
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
                 </select>
-
             </div>
-
 
             <!-- Child -->
             <div class="field">
-
                 <span class="field-icon">
-                    <svg viewBox="0 0 24 24">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <circle cx="9" cy="8" r="3"></circle>
                         <circle cx="17" cy="8" r="3"></circle>
                         <path d="M3 20c.4-3.5 2.4-5 6-5s5.6 1.5 6 5"></path>
                         <path d="M14 15c3.5 0 5.8 1.6 6 5"></path>
                     </svg>
                 </span>
-
-                <select>
-                    <option>Child</option>
-                    <option>1 Child</option>
-                    <option>2 Children</option>
-                    <option>3 Children</option>
-                    <option>4 Children</option>
+                <select name="children" required>
+                    <option value="0">0 Children</option>
+                    <option value="1">1 Child</option>
+                    <option value="2">2 Children</option>
+                    <option value="3">3 Children</option>
+                    <option value="4">4 Children</option>
                 </select>
-
             </div>
 
         </div>
 
-
-        <!-- Bottom -->
         <div class="bottom-row">
 
             <label class="check-item">
-                <input type="checkbox">
-                <span>
-                    I'd like to receive phone call about services.
-                </span>
+                <input type="checkbox" name="phone_call" value="1">
+                <span>I'd like to receive phone call about services.</span>
             </label>
-
 
             <label class="check-item">
-                <input type="checkbox">
-                <span>
-                    I'd like to receive ours emails about Hajj & Umrah
-                </span>
+                <input type="checkbox" name="email_updates" value="1">
+                <span>I'd like to receive our emails about Hajj &amp; Umrah</span>
             </label>
 
-
-            <!-- Working CAPTCHA -->
-            <div class="captcha">
-
-                <button type="button"
-                        class="captcha-refresh"
-                        onclick="generateCaptcha()"
-                        aria-label="Refresh CAPTCHA">⟳</button>
-
-                <span id="captcha-question">6 + 5 =</span>
-
-            </div>
-
-            <div class="captcha-answer-wrap">
-
-                <input
-                    class="captcha-input"
-                    id="captcha-answer"
-                    type="number"
-                    placeholder="Your Answer*"
-                    required
-                >
-
-                <span id="captcha-message"
-                      class="captcha-message"
-                      aria-live="polite"></span>
-
-            </div>
-
-
-            <button
-                class="submit-btn"
-                type="submit"
-            >
+            <button class="submit-btn" type="submit">
                 Submit
             </button>
 
@@ -808,76 +636,6 @@
     </form>
 
 </section>
-
-<script>
-let captchaAnswer = 0;
-
-function generateCaptcha() {
-    const number1 = Math.floor(Math.random() * 9) + 1;
-    const number2 = Math.floor(Math.random() * 9) + 1;
-
-    captchaAnswer = number1 + number2;
-
-    const question = document.getElementById("captcha-question");
-    const input = document.getElementById("captcha-answer");
-    const message = document.getElementById("captcha-message");
-
-    if (!question || !input || !message) return;
-
-    question.textContent = `${number1} + ${number2} =`;
-    input.value = "";
-    input.classList.remove("captcha-error", "captcha-success");
-    message.textContent = "";
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    generateCaptcha();
-
-    const form = document.querySelector(".quote-form");
-    if (!form) return;
-
-    form.addEventListener("submit", function (e) {
-        const input = document.getElementById("captcha-answer");
-        const message = document.getElementById("captcha-message");
-
-        if (!input || !message) return;
-
-        const value = input.value.trim();
-
-        if (value === "") {
-            e.preventDefault();
-            input.classList.add("captcha-error");
-            input.classList.remove("captcha-success");
-            message.textContent = "Please enter the CAPTCHA answer.";
-            message.style.color = "#c54b5c";
-            input.focus();
-            return;
-        }
-
-        if (Number(value) !== captchaAnswer) {
-            e.preventDefault();
-            input.classList.add("captcha-error");
-            input.classList.remove("captcha-success");
-            message.textContent = "Incorrect answer. Please try again.";
-            message.style.color = "#c54b5c";
-            input.focus();
-            return;
-        }
-
-        input.classList.remove("captcha-error");
-        input.classList.add("captcha-success");
-        message.textContent = "Captcha verified ✓";
-        message.style.color = "#6ca66c";
-    });
-});
-</script>
-</body>
-</html>
-
-<br>
-
-
-
 
 <!-- ===== Hajj & Umrah Statement Section ===== -->
 <section class="section statement" aria-labelledby="statement-title">
@@ -1752,159 +1510,303 @@ document.addEventListener("DOMContentLoaded", function () {
 </main>
 
 
-<!-- ===== Footer ===== -->
-<footer class="footer">
+<!-- ================= PREMIUM TRAVEL FOOTER ================= -->
+<footer class="travel-footer">
+
+    <!-- Decorative Top -->
+    <div class="footer-wave"></div>
 
     <div class="container">
 
-        <div class="footer__top">
+        <!-- ===== Newsletter Banner ===== -->
+        <div class="footer-newsletter">
 
-            <!-- Newsletter -->
-            <div class="footer__lead">
+            <div class="newsletter-content">
+                <span class="newsletter-icon">
+                    ✈
+                </span>
 
-                <p class="footer__title">
-                    Stay Connected with Miqat Travels
+                <div>
+                    <span class="newsletter-label">
+                        STAY CONNECTED
+                    </span>
+
+                    <h2>
+                        Your Journey Starts With Us
+                    </h2>
+
+                    <p>
+                        Get the latest Hajj & Umrah packages,
+                        travel updates and exclusive offers.
+                    </p>
+                </div>
+            </div>
+
+            <form class="footer-subscribe" data-demo-form novalidate>
+
+                <label class="sr-only" for="footer-email">
+                    Email Address
+                </label>
+
+                <input
+                    id="footer-email"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                    <span>→</span>
+                </button>
+
+                <p
+                    class="form-note"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </div>
+
+
+        <!-- ===== Main Footer ===== -->
+        <div class="travel-footer-grid">
+
+            <!-- ===== Brand ===== -->
+            <div class="footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    <span class="logo-mark">
+                        ✈
+                    </span>
+
+                    <span>
+                        <strong>Miqat</strong>
+                        <small>TRAVELS</small>
+                    </span>
+                </a>
+
+                <p class="footer-description">
+                    Your trusted travel partner for meaningful
+                    Hajj, Umrah and international travel experiences.
+                    We are here to make every journey comfortable,
+                    organised and memorable.
                 </p>
 
-                <p class="footer__sub">
-                    Receive updates about Hajj and Umrah packages,
-                    travel information, important announcements,
-                    and helpful pilgrimage guidance.
-                </p>
 
-                <form class="subscribe" data-demo-form novalidate>
+                <!-- Trust -->
+                <div class="footer-trust">
 
-                    <label class="sr-only" for="sub-email">
-                        Email address
-                    </label>
+                    <div class="trust-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Trusted Service</strong>
+                            <small>Professional Assistance</small>
+                        </div>
+                    </div>
 
-                    <input
-                        id="sub-email"
-                        type="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        autocomplete="email"
-                        required
-                    />
+                    <div class="trust-item">
+                        <span>✓</span>
+                        <div>
+                            <strong>Travel Support</strong>
+                            <small>Here When You Need Us</small>
+                        </div>
+                    </div>
 
-                    <button
-                        class="btn btn--glacier"
-                        type="submit"
+                </div>
+
+
+                <!-- Social -->
+                <div class="footer-social">
+
+                    <a href="#" aria-label="Facebook">
+                        f
+                    </a>
+
+                    <a href="#" aria-label="Instagram">
+                        ◎
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        ▶
+                    </a>
+
+                    <a
+                        href="https://wa.me/923001234567"
+                        aria-label="WhatsApp"
                     >
-                        Subscribe
-                    </button>
+                        ☎
+                    </a>
 
-                    <p
-                        class="form-note"
-                        role="status"
-                        aria-live="polite"
-                    ></p>
-
-                </form>
+                </div>
 
             </div>
 
 
-            <!-- Footer Columns -->
-            <div class="footer__cols">
+            <!-- ===== Explore ===== -->
+            <div class="footer-column">
 
-                <!-- Explore -->
-                <div>
+                <h3>
+                    Explore
+                </h3>
 
-                    <p class="label footer__h">
-                        Explore
-                    </p>
+                <span class="footer-line"></span>
 
-                    <ul>
+                <ul>
 
-                        <li>
-                            <a href="tours.html">
-                                Hajj Packages
-                            </a>
-                        </li>
+                    <li>
+                        <a href="tours.html">
+                            <span>›</span>
+                            Hajj Packages
+                        </a>
+                    </li>
 
-                        <li>
-                            <a href="tours.html">
-                                Umrah Packages
-                            </a>
-                        </li>
+                    <li>
+                        <a href="tours.html">
+                            <span>›</span>
+                            Umrah Packages
+                        </a>
+                    </li>
 
-                        <li>
-                            <a href="tours.html">
-                                Makkah & Madinah
-                            </a>
-                        </li>
+                    <li>
+                        <a href="tours.html">
+                            <span>›</span>
+                            Makkah & Madinah
+                        </a>
+                    </li>
 
-                        <li>
-                            <a href="tours.html">
-                                Package Details
-                            </a>
-                        </li>
+                    <li>
+                        <a href="tours.html">
+                            <span>›</span>
+                            Travel Packages
+                        </a>
+                    </li>
 
-                    </ul>
+                    <li>
+                        <a href="tours.html">
+                            <span>›</span>
+                            Package Details
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ===== Company ===== -->
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+                <span class="footer-line"></span>
+
+                <ul>
+
+                    <li>
+                        <a href="about.html">
+                            <span>›</span>
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            <span>›</span>
+                            Why Choose Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            <span>›</span>
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacy.html">
+                            <span>›</span>
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            <span>›</span>
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ===== Contact ===== -->
+            <div class="footer-column footer-contact">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+                <span class="footer-line"></span>
+
+
+                <div class="contact-box">
+
+                    <span class="contact-icon">
+                        📍
+                    </span>
+
+                    <div>
+                        <strong>Our Office</strong>
+
+                        <p>
+                            Miqat Travels<br>
+                            United Kingdom
+                        </p>
+                    </div>
 
                 </div>
 
 
-                <!-- Company -->
-                <div>
+                <div class="contact-box">
 
-                    <p class="label footer__h">
-                        Miqat Travels
-                    </p>
+                    <span class="contact-icon">
+                        ☎
+                    </span>
 
-                    <ul>
+                    <div>
+                        <strong>Call Us</strong>
 
-                        <li>
-                            <a href="about.html">
-                                About Us
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="about.html">
-                                Why Choose Us
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">
-                                Contact Us
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="privacy.html">
-                                Privacy Policy
-                            </a>
-                        </li>
-
-                    </ul>
+                        <a href="tel:02039616958">
+                            020 3961 6958
+                        </a>
+                    </div>
 
                 </div>
 
 
-                <!-- Contact -->
-                <div>
+                <div class="contact-box">
 
-                    <p class="label footer__h">
-                        Contact
-                    </p>
+                    <span class="contact-icon">
+                        ✉
+                    </span>
 
-                    <address>
-
-                        Miqat Travels<br />
-                        United Kingdom<br />
-
-                        <a href="tel:+440000000000">
-                            +44 00 0000 0000
-                        </a><br />
+                    <div>
+                        <strong>Email Us</strong>
 
                         <a href="mailto:info@miqattravels.com">
                             info@miqattravels.com
                         </a>
-
-                    </address>
+                    </div>
 
                 </div>
 
@@ -1913,20 +1815,73 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
 
-        <!-- Large Footer Brand -->
-        <p class="footer__word" aria-hidden="true">
-            Miqat Travels
-        </p>
+        <!-- ===== Travel Destinations ===== -->
+        <div class="footer-destinations">
+
+            <div class="destination-title">
+                <span>✈</span>
+                <strong>
+                    Popular Travel Destinations
+                </strong>
+            </div>
+
+            <div class="destination-list">
+
+                <a href="#">
+                    Makkah
+                </a>
+
+                <a href="#">
+                    Madinah
+                </a>
+
+                <a href="#">
+                    Saudi Arabia
+                </a>
+
+               
+
+            </div>
+
+        </div>
 
 
-        <!-- Footer Bottom -->
-        <div class="footer__bottom">
+        <!-- ===== Big Brand ===== -->
+        <div class="footer-big-brand">
+            MIQAT
+            <span>TRAVELS</span>
+        </div>
+
+
+        <!-- ===== Bottom ===== -->
+        <div class="footer-bottom">
 
             <p>
-                &copy;
+                ©
                 <span data-year>2026</span>
-                Miqat Travels. All Rights Reserved.
+                Miqat Travels.
+                All Rights Reserved.
             </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="privacy.html">
+                    Privacy
+                </a>
+
+                <span>•</span>
+
+                <a href="terms.html">
+                    Terms
+                </a>
+
+                <span>•</span>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
 
             <p>
                 Hajj & Umrah Travel Services
@@ -1939,6 +1894,925 @@ document.addEventListener("DOMContentLoaded", function () {
 </footer>
 
 
+<!-- ================= FOOTER CSS ================= -->
+
+<style>
+
+.travel-footer {
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(72, 145, 120, .14),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #081815 0%,
+            #0b211d 50%,
+            #06120f 100%
+        );
+
+    color: #fff;
+    overflow: hidden;
+    padding: 80px 0 0;
+}
+
+
+/* ================= NEWSLETTER ================= */
+
+.footer-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    padding: 32px 35px;
+
+    margin-bottom: 70px;
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.09),
+            rgba(255,255,255,.025)
+        );
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.25);
+
+    backdrop-filter: blur(12px);
+}
+
+
+.newsletter-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.newsletter-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 18px;
+
+    background: #c8a45d;
+
+    color: #10201b;
+
+    font-size: 28px;
+}
+
+
+.newsletter-label {
+    display: block;
+
+    color: #c8a45d;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+}
+
+
+.newsletter-content h2 {
+    margin: 0 0 5px;
+
+    font-size: 28px;
+
+    line-height: 1.2;
+
+    color: #fff;
+}
+
+
+.newsletter-content p {
+    margin: 0;
+
+    color: rgba(255,255,255,.68);
+
+    font-size: 14px;
+}
+
+
+.footer-subscribe {
+    position: relative;
+
+    display: flex;
+
+    min-width: 420px;
+
+    max-width: 480px;
+
+    padding: 5px;
+
+    border-radius: 14px;
+
+    background: #fff;
+}
+
+
+.footer-subscribe input {
+    width: 100%;
+
+    border: 0;
+    outline: 0;
+
+    padding: 15px 17px;
+
+    background: transparent;
+
+    color: #222;
+
+    font-size: 14px;
+}
+
+
+.footer-subscribe input::placeholder {
+    color: #8b8b8b;
+}
+
+
+.footer-subscribe button {
+    border: 0;
+
+    border-radius: 11px;
+
+    padding: 0 22px;
+
+    background: #c8a45d;
+
+    color: #111;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition: .25s ease;
+}
+
+
+.footer-subscribe button:hover {
+    background: #e0bd75;
+
+    transform: translateY(-1px);
+}
+
+
+.footer-subscribe button span {
+    margin-left: 8px;
+}
+
+
+.form-note {
+    position: absolute;
+
+    left: 0;
+
+    top: calc(100% + 8px);
+
+    margin: 0;
+
+    font-size: 12px;
+}
+
+
+/* ================= GRID ================= */
+
+.travel-footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.7fr
+        1fr
+        1fr
+        1.25fr;
+
+    gap: 55px;
+
+    padding-bottom: 55px;
+}
+
+
+/* ================= BRAND ================= */
+
+.footer-logo {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    margin-bottom: 22px;
+}
+
+
+.logo-mark {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #c8a45d;
+
+    color: #10201b;
+
+    font-size: 22px;
+
+    box-shadow:
+        0 8px 25px rgba(200,164,93,.2);
+}
+
+
+.footer-logo strong {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    line-height: 1;
+}
+
+
+.footer-logo small {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #c8a45d;
+}
+
+
+.footer-description {
+    max-width: 380px;
+
+    color: rgba(255,255,255,.65);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin: 0 0 25px;
+}
+
+
+/* ================= TRUST ================= */
+
+.footer-trust {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    margin-bottom: 25px;
+}
+
+
+.trust-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.trust-item > span {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(200,164,93,.15);
+
+    color: #c8a45d;
+
+    font-size: 13px;
+}
+
+
+.trust-item strong {
+    display: block;
+
+    font-size: 12px;
+
+    color: #fff;
+}
+
+
+.trust-item small {
+    display: block;
+
+    color: rgba(255,255,255,.5);
+
+    font-size: 10px;
+
+    margin-top: 2px;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.footer-social {
+    display: flex;
+
+    gap: 9px;
+}
+
+
+.footer-social a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    color: #fff;
+
+    background: rgba(255,255,255,.07);
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    transition: .25s ease;
+}
+
+
+.footer-social a:hover {
+    background: #c8a45d;
+
+    color: #101814;
+
+    transform: translateY(-4px);
+}
+
+
+/* ================= COLUMNS ================= */
+
+.footer-column h3 {
+    margin: 0 0 9px;
+
+    font-size: 17px;
+
+    color: #fff;
+}
+
+
+.footer-line {
+    display: block;
+
+    width: 35px;
+
+    height: 2px;
+
+    background: #c8a45d;
+
+    margin-bottom: 22px;
+}
+
+
+.footer-column ul {
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.footer-column li {
+    margin-bottom: 13px;
+}
+
+
+.footer-column li a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    color: rgba(255,255,255,.62);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: .2s ease;
+}
+
+
+.footer-column li a span {
+    color: #c8a45d;
+
+    transition: .2s ease;
+}
+
+
+.footer-column li a:hover {
+    color: #fff;
+
+    transform: translateX(4px);
+}
+
+
+.footer-column li a:hover span {
+    transform: translateX(3px);
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-box {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 19px;
+}
+
+
+.contact-icon {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: rgba(200,164,93,.1);
+
+    color: #c8a45d;
+
+    font-size: 15px;
+}
+
+
+.contact-box strong {
+    display: block;
+
+    color: #fff;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+
+.contact-box p {
+    color: rgba(255,255,255,.58);
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+.contact-box a {
+    color: rgba(255,255,255,.68);
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: .2s;
+}
+
+
+.contact-box a:hover {
+    color: #c8a45d;
+}
+
+
+/* ================= DESTINATIONS ================= */
+
+.footer-destinations {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 22px 0;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+
+.destination-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    white-space: nowrap;
+
+    color: #fff;
+
+    font-size: 13px;
+}
+
+
+.destination-title span {
+    color: #c8a45d;
+
+    font-size: 17px;
+}
+
+
+.destination-list {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: flex-end;
+
+    gap: 9px;
+}
+
+
+.destination-list a {
+    padding: 7px 13px;
+
+    border-radius: 20px;
+
+    color: rgba(255,255,255,.55);
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: .2s;
+}
+
+
+.destination-list a:hover {
+    color: #111;
+
+    background: #c8a45d;
+
+    border-color: #c8a45d;
+}
+
+
+/* ================= BIG BRAND ================= */
+
+.footer-big-brand {
+    padding: 48px 0 35px;
+
+    text-align: center;
+
+    color: rgba(255,255,255,.035);
+
+    font-size: clamp(60px, 13vw, 180px);
+
+    font-weight: 900;
+
+    line-height: .75;
+
+    letter-spacing: -.06em;
+
+    user-select: none;
+}
+
+
+.footer-big-brand span {
+    color: rgba(200,164,93,.08);
+
+    font-size: .45em;
+
+    letter-spacing: .2em;
+
+    margin-left: 10px;
+}
+
+
+/* ================= BOTTOM ================= */
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px 0 25px;
+
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    color: rgba(255,255,255,.45);
+
+    font-size: 11px;
+}
+
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+.footer-bottom-links {
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+}
+
+
+.footer-bottom-links a {
+    color: rgba(255,255,255,.5);
+
+    text-decoration: none;
+
+    transition: .2s;
+}
+
+
+.footer-bottom-links a:hover {
+    color: #c8a45d;
+}
+
+
+.footer-bottom-links span {
+    color: rgba(255,255,255,.2);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 1000px) {
+
+    .footer-newsletter {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-subscribe {
+        width: 100%;
+
+        max-width: none;
+
+        min-width: 0;
+    }
+
+    .travel-footer-grid {
+        grid-template-columns:
+            1.5fr
+            1fr
+            1fr;
+    }
+
+    .footer-contact {
+        grid-column: 1 / -1;
+    }
+
+    .footer-destinations {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .destination-list {
+        justify-content: flex-start;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .travel-footer {
+        padding-top: 50px;
+    }
+
+    .footer-newsletter {
+        padding: 25px 20px;
+
+        border-radius: 18px;
+
+        margin-bottom: 50px;
+    }
+
+    .newsletter-content {
+        align-items: flex-start;
+    }
+
+    .newsletter-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 21px;
+
+        border-radius: 13px;
+    }
+
+    .newsletter-content h2 {
+        font-size: 22px;
+    }
+
+    .newsletter-content p {
+        font-size: 12px;
+
+        line-height: 1.6;
+    }
+
+    .footer-subscribe {
+        display: flex;
+
+        flex-direction: column;
+
+        background: transparent;
+
+        padding: 0;
+
+        gap: 8px;
+    }
+
+    .footer-subscribe input {
+        background: #fff;
+
+        border-radius: 10px;
+
+        padding: 14px;
+    }
+
+    .footer-subscribe button {
+        min-height: 48px;
+
+        border-radius: 10px;
+    }
+
+    .travel-footer-grid {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 40px 25px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-contact {
+        grid-column: 1 / -1;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-bottom: 25px;
+    }
+
+    .footer-big-brand {
+        font-size: 18vw;
+
+        padding: 40px 0 30px;
+    }
+
+}
+
+
+@media (max-width: 430px) {
+
+    .footer-newsletter {
+        padding: 22px 16px;
+    }
+
+    .newsletter-content {
+        gap: 12px;
+    }
+
+    .newsletter-icon {
+        width: 44px;
+        height: 44px;
+
+        font-size: 18px;
+    }
+
+    .newsletter-content h2 {
+        font-size: 19px;
+    }
+
+    .newsletter-label {
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .travel-footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 32px;
+    }
+
+    .footer-brand,
+    .footer-contact {
+        grid-column: auto;
+    }
+
+    .destination-list a {
+        font-size: 10px;
+
+        padding: 6px 10px;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}
+
+
+/* Accessibility */
+
+.sr-only {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0,0,0,0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+
+</style>
+
+
 <!-- Toast -->
 <div
     class="toast"
@@ -1949,10 +2823,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <script src="assets/js/main.js" defer></script>
-
-</body>
-</html>
-
 
 <a href="https://wa.me/923001234567?text=Hello%20I%20would%20like%20to%20contact%20you."
    class="contact-float whatsapp-float"
@@ -1984,8 +2854,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 <!-- Font Awesome -->
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 
 <style>
@@ -2205,3 +3074,520 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 </style>
+
+
+<style id="miqat-responsive-fixes">
+/* =========================================================
+   MIQAT TRAVELS — RESPONSIVE / MOBILE-FIRST FIXES
+   These rules supplement the original template styles.
+   ========================================================= */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: 0;
+    overflow-x: hidden;
+}
+
+img, svg, video, iframe {
+    max-width: 100%;
+}
+
+img {
+    height: auto;
+}
+
+.container {
+    width: min(100% - 32px, 1240px);
+    margin-inline: auto;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__inner {
+    min-width: 0;
+    gap: 18px;
+}
+
+.brand {
+    min-width: 0;
+    flex: 0 1 auto;
+}
+
+.brand-logo {
+    width: 150px;
+    max-width: 42vw;
+    height: auto;
+}
+
+.nav {
+    min-width: 0;
+}
+
+.nav a {
+    white-space: nowrap;
+}
+
+.header__tools {
+    flex: 0 0 auto;
+}
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__grid,
+.hero__copy {
+    min-width: 0;
+}
+
+.hero__title {
+    overflow-wrap: anywhere;
+}
+
+.hero__sub {
+    max-width: 760px;
+}
+
+.cta-orbit {
+    max-width: 100%;
+}
+
+/* Quote form */
+.quote-section {
+    width: 100%;
+    padding: clamp(14px, 2vw, 28px) 0;
+    background: #f8f5fd;
+    overflow: hidden;
+}
+
+.quote-box {
+    width: min(100%, 1500px);
+    margin-inline: auto;
+}
+
+.form-row,
+.bottom-row {
+    width: 100%;
+}
+
+
+.field input,
+.field select {
+    max-width: 100%;
+}
+
+
+/* General sections */
+.section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.split {
+    min-width: 0;
+}
+
+.split__media,
+.split__copy {
+    min-width: 0;
+}
+
+.split__media img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.statement__line,
+.statement__sub,
+.shead,
+.promise-row,
+.tgrid,
+.bento {
+    min-width: 0;
+    max-width: 100%;
+}
+
+.statement__line {
+    overflow-wrap: anywhere;
+}
+
+.bento img,
+.tcard__media img,
+.quote-band__img {
+    width: 100%;
+    display: block;
+}
+
+.tcard,
+.dtile,
+.promise {
+    min-width: 0;
+}
+
+.tcard__name,
+.tcard__place,
+.tcard__facts,
+.promise h3,
+.promise p {
+    overflow-wrap: anywhere;
+}
+
+.closer__card {
+    min-width: 0;
+}
+
+.closer__actions {
+    flex-wrap: wrap;
+}
+
+.footer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer__top,
+.footer__cols,
+.footer__bottom {
+    min-width: 0;
+}
+
+.footer__cols > div {
+    min-width: 0;
+}
+
+.footer a,
+.footer address {
+    overflow-wrap: anywhere;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .header__inner {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .hero__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__copy {
+        max-width: 850px;
+    }
+
+    .split {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .split__media {
+        max-width: 760px;
+        margin-inline: auto;
+        width: 100%;
+    }
+
+    .bento {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dtile--wide {
+        grid-column: span 2;
+    }
+
+    .promise-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tgrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer__cols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        width: min(100% - 24px, 1240px);
+    }
+
+    .header__inner {
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .brand {
+        flex: 1 1 auto;
+    }
+
+    .brand-logo {
+        width: 150px;
+        max-width: 52vw;
+    }
+
+    .header__signin {
+        display: none;
+    }
+
+    .burger {
+        flex: 0 0 auto;
+    }
+
+    /* If the template's JS opens the nav, make it fit the screen. */
+    .nav {
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hero__title {
+        font-size: clamp(34px, 9vw, 58px);
+        line-height: 1.05;
+    }
+
+    .hero__sub {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .statement__line {
+        font-size: clamp(30px, 8vw, 48px);
+        line-height: 1.12;
+    }
+
+    .bento,
+    .tgrid,
+    .promise-row {
+        grid-template-columns: 1fr;
+    }
+
+    .dtile--wide {
+        grid-column: auto;
+    }
+
+    .shead--split {
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .link-arrow {
+        max-width: 100%;
+    }
+
+    .closer__actions {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .closer__actions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer__cols {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .footer__word {
+        font-size: clamp(42px, 15vw, 100px);
+        overflow-wrap: anywhere;
+    }
+
+    /* Quote form */
+    .quote-section {
+        padding: 10px 8px;
+    }
+
+    .quote-box {
+        padding: 22px 14px !important;
+        border-radius: 14px;
+    }
+
+    .quote-title {
+        font-size: clamp(28px, 8vw, 40px) !important;
+        line-height: 1.12;
+    }
+
+    .quote-title::after {
+        width: min(150px, 70%);
+    }
+
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .bottom-row {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        margin-top: 22px !important;
+    }
+
+    .check-item {
+        white-space: normal !important;
+        align-items: flex-start;
+    }
+
+
+    .submit-btn {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+    .container {
+        width: min(100% - 18px, 1240px);
+    }
+
+    .brand-logo {
+        width: 135px;
+        max-width: 55vw;
+    }
+
+    .hero__title {
+        font-size: clamp(30px, 10vw, 44px);
+    }
+
+    .hero__eyebrow {
+        font-size: 12px;
+    }
+
+    .cta-orbit {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .quote-box {
+        padding: 20px 12px !important;
+    }
+
+    .quote-title {
+        font-size: 28px !important;
+    }
+
+    .field,
+    .field input,
+    .field select,
+    .submit-btn {
+        height: 52px !important;
+    }
+
+    .field input,
+    .field select {
+        font-size: 16px !important;
+    }
+
+    .field-icon {
+        left: 14px !important;
+    }
+
+    .field input,
+    .field select {
+        padding-left: 46px !important;
+    }
+
+    .contact-float {
+        max-width: calc(100vw - 24px);
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .container {
+        width: calc(100% - 14px);
+    }
+
+    .brand-logo {
+        width: 120px;
+    }
+
+    .hero__title {
+        font-size: 29px;
+    }
+
+    .hero__sub {
+        font-size: 15px;
+    }
+
+    .quote-section {
+        padding-inline: 5px;
+    }
+
+    .quote-box {
+        padding: 18px 10px !important;
+    }
+
+    .check-item {
+        font-size: 13px !important;
+    }
+}
+
+/* Accessibility / touch */
+a,
+button,
+select,
+input {
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+    touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+}
+</style>
+
+</body>
+</html>
